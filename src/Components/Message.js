@@ -2,10 +2,10 @@ import React from 'react'
 
 //message is a property to hold a message
 //changeMessage is a property to hold reference of a function
-const Message = ({message,changeMessage}) =>{
+const Message = ({info,changeMessage}) =>{
     return(
         <div className="jumbotron">
-           {message}
+           {info}
            <button className="btn btn-dark" onClick={changeMessage}>Change Message</button>
         </div>
     )
