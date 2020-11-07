@@ -1,5 +1,6 @@
 import React from 'react';
 import Message from './Components/Message';
+import { MessageHOC } from './Redux/hocs/MessageHOC';
 
 
 const App=() =>{
