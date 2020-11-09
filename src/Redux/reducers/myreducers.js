@@ -25,3 +25,16 @@ export const secondreducer  =(data={message2:"Default message"},action) =>{
     }
 
 }
+
+export const peoplereducer  =(data={people:[]},action) =>{
+   
+    switch(action.type){
+        case "PEOPLE_ACTION":
+              
+               return {people: action.data}
+        default:
+               return data;
+    }
+
+}
+
