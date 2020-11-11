@@ -39,7 +39,7 @@ const People = ({people,addPeople}) =>{
                 <tr>
                     <td colSpan="2" align="center">
                 <input type="button" value="store" 
-                onClick={()=>{storePerson({sno:sno,name: name,city: city})}} />
+                onClick={()=>{addPeople({sno:sno,name: name,city: city})}} />
                             
                     </td>
                 </tr>
@@ -47,7 +47,7 @@ const People = ({people,addPeople}) =>{
             </table>
         </form>
 
-        <table id="report"  class="table table-hover">
+        <table id="report"  className="table table-hover">
                 { people.length==0?"": <thead>
                     <tr>
                      <th>Sno</th>

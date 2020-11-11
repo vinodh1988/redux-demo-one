@@ -16,6 +16,27 @@ export const peopleRead = ()=>{
         catch{
             dispatch(peopleAction([]))
         }
-    }
+    
+}
+}
 
+/*
+export const storePersonData = (data) => {
+
+    return async (dispatch)=>{
+        try{
+       let  response = await Axios.post("http://localhost:4500/people",{...data,id:data.sno});
+        dispatch(peopleRead());
+        }
+        catch(e){
+         alert("Unable to save...!!!!")
+        }
+    }
+}*/
+
+export const storePersonData= (data)=>{
+    return {
+        type: "PEOPLE_ADD",
+        data: {...data, id: data.sno}
+    }
 }
